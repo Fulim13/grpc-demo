@@ -1,0 +1,10 @@
+// go.work links these local modules so edits in gen/ are used by services/ instantly,
+
+go 1.27.0
+
+use (
+	./gen/golang/v1/order
+	./gen/golang/v1/payment
+	./services/order
+	./services/payment
+)
